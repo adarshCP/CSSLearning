@@ -2,7 +2,7 @@ import React from 'react'
 
 const adarsh = () => {
   return (
-    <div>hELLOW WORDLD</div>
+    <div>hELLOW WORDLSAD</div>
   )
 }
 
