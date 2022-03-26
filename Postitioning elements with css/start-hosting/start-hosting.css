@@ -1,0 +1,86 @@
+
+main{
+    padding-top: 1.5rem;
+}
+.signup-form{
+    padding:1rem;
+}
+
+.signup-title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(211, 195, 195);
+}
+.signup-form label{
+    font-weight:bold ;
+    margin-bottom: 10px;
+}
+.signup-form input,
+.signup-form select{
+    margin-bottom: 10px;
+    padding: 0.3rem 0.5rem;
+    font: inherit;
+}
+.signup-form input:focus,
+.signup-form select:focus{
+    outline: none;
+    background-color: rgb(100, 172, 78);
+    border: 3px solid green;
+}
+.signup-form select:focus{
+    background-color: aqua;
+}
+.signup-form label,
+.signup-form select,.signup-form input{
+    display: block;
+    width: 100%;
+    
+
+}
+
+.signup-form input[type="checkbox"],
+.signup-form input[type="checkbox"] + label
+{
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    margin-right: 0.2rem;
+
+}
+
+.signup-form button[type="submit"]{
+    margin-top: 1rem;
+    display: block;
+}
+.signup-form input[type="checkbox"]{
+    border: 1px solid wheat;
+    width: 1rem;
+    height: 1rem;
+    background-color:yellow;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.signup-form input[type="checkbox"]:checked{
+    background-color: green;
+}
+.signup-form :invalid{
+    
+    background-color: red;
+
+}
+
+@media (min-width:40rem){
+
+    .signup-form{
+        margin: auto;
+        width: 30rem;
+        max-width: 2500px;
+        
+    }
+
+
+}
