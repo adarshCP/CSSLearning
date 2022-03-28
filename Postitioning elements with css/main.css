@@ -1,15 +1,19 @@
 .modal{
     position: fixed;
     z-index: 200;
+    opacity: 0;
+    transform: translateY(-3rem);
+    transition: opacity 200ms ease-out ,transform 500ms ease-out ;
     left: 40%;
     width: 30%;
     top: 20%;
     text-align: center;
     background-color: #ffcede;
-    display: none;
+  
     border-radius: 5px;
     font-size: 1.2rem;
-
+    
+    
 }
 .modal__actions{
    text-align: right;
