@@ -1,0 +1,13 @@
+
+
+.container{
+    
+}
+.box{
+    background-color: blue;
+    width: 10rem;
+    height:10rem;
+    margin: auto;
+    margin-top: 200px;
+    transform: rotateX(120deg) rotateY(20deg) rotateZ(20deg);
+}

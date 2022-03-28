@@ -39,7 +39,8 @@ main {
     padding: 0.5rem;
     margin: 0.6rem;
     z-index: 10;
-    transform: rotateZ(45deg) translateX(4rem) translateY(-1.5rem);
+    /* transform: rotateZ(45deg) translateX(4rem) translateY(-1.5rem); */
+    transform: rotate(45deg)   translate(4rem,-1.5rem);
     transform-origin: center;
     
   
