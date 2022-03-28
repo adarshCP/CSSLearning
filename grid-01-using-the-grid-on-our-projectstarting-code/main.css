@@ -5,6 +5,8 @@
     grid-template-columns: 25% 25% 10px;
     grid-template-rows:[row-1-start] 5rem [row-1-end row-2-start]  minmax(10px,100px) 10px 100px 10px;
     max-width: 1200px;
+    align-items: center;
+    justify-items: center;
 }
 
 .el1 {
