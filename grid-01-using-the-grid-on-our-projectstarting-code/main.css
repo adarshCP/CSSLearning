@@ -1,61 +1,98 @@
 .container {
     margin: auto;
-    height: 700px;
-    display: grid;
-    grid-template-columns: 25% 25% 10px;
-    grid-template-rows:[row-1-start] 5rem [row-1-end row-2-start]  minmax(10px,100px) 10px 100px 10px;
+    height: auto;
+    width: 100%;
     max-width: 1200px;
-    align-items: center;
-    justify-items: center;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto auto;
+    
+    grid-template-areas: "el1 el4"
+                         "el2 el4"
+                         "el3 el3";
+    /* align-items: stretch;
+    justify-items: stretch; */
+    grid-gap: 15px 15px;
 }
 
 .el1 {
-    background: url("./grid1.jpg");
-    background-position: center;
-    background-size: contain;
-    grid-column-start: 1;
+   
+   
+    /* grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: row-1-start;
-    grid-row-end:5;
+    grid-row-end:5; */
+    grid-area: el1;
+   
 }
+
 
 .el2 {
-    background: rgba(255, 0, 0, 0.5);
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 4;
-    grid-row-end: 5;
+   
+    
+    grid-area: el2;
 }
 
+
 .el3 {
-    background: rgba(0, 128, 0, 0.5);
-    grid-column-start: 1;
+    
+    /* grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start:6;
-    grid-row-end: 7;
+    grid-row-end: 7; */
+    grid-area: el3;
 }
 
 .el4 {
-    background: rgba(0, 4, 255, 0.5);
-    grid-column-start: 4;
+   
+    /* grid-column-start: 4;
     grid-column-end: 6;
     grid-row-start: 1;
-    grid-row-end:3;
+    grid-row-end:3; */
+    grid-area: el4;
+}
+
+.el1 img,
+.el2 img,
+.el3 img,
+.el4 img{
+    width: 100%;
+    height: 100%;
+   
+   
 }
 
 div{
-    border-radius: 2px;
+    
 }
 
-.el1{
-   position: relative;
-   border-radius: 5px;
-   
+
+
+
+@media (max-width:600px) {
+    .container{
+       display: block;
+
+       
+    }
+    .container div{
+       margin-bottom: 10px;
+        
+    }
+    /* .el1,.el2,.el3,.el4 {
+        height: auto;
+        border: none;
+        
+        
+    } */
+    .el1 img,
+.el2 img,
+.el3 img,
+.el4 img{
+    width: 100%;    height:100%;
+    vertical-align: middle;
+
+    
 }
-.el1 p{
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    left: 30px;
-    top:10px;
 }
+
