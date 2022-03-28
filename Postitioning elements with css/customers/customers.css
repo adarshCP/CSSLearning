@@ -24,14 +24,18 @@
     
   }
   .testimonial__image-container{
-      width: 65%;
+      width: 50%;
       
      
       box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
+      transform: skew(20deg);
+      overflow: hidden;
   }
   .testimonial__image{
       width: 100%;
       vertical-align: top;
+      transform: skew(-20deg) scale(1.3);
+      
   }
   
   #customer-2.testimonial {
@@ -70,6 +74,9 @@
   
 
   @media (max-width:40rem){
+    .testimonial{
+      flex-direction: column;
+    }
     .testimonial__info{
       display: block;
       width: 100%;
@@ -78,7 +85,7 @@
     }
     .testimonial__image-container{
       display: block;
-      width: 100%;
+      width: 70%;
     }
     .testimonial__name{
       margin: 0;

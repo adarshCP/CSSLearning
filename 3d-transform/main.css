@@ -1,0 +1,14 @@
+
+
+.container{
+    perspective: 1000px;
+   /* perspective-origin: 500px; */
+}
+.box{
+    background-color: blue;
+    width: 10rem;
+    height:10rem;
+    margin: auto;
+    margin-top: 200px;
+    transform: rotateX(30deg) rotateY(80deg) rotateZ(30deg) ;
+}
