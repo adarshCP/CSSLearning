@@ -1,19 +1,59 @@
 .container {
-    margin: 20px;
+    margin: auto;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 25% 25% 10px;
+    grid-template-rows:[row-1-start] 5rem [row-1-end row-2-start]  minmax(10px,100px) 10px 100px 10px;
+    max-width: 1200px;
 }
 
 .el1 {
-    background: rgba(255, 154, 72, 0.5);
+    background: url("./grid1.jpg");
+    background-position: center;
+    background-size: contain;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: row-1-start;
+    grid-row-end:5;
 }
 
 .el2 {
     background: rgba(255, 0, 0, 0.5);
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
 .el3 {
     background: rgba(0, 128, 0, 0.5);
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start:6;
+    grid-row-end: 7;
 }
 
 .el4 {
     background: rgba(0, 4, 255, 0.5);
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end:3;
+}
+
+div{
+    border-radius: 2px;
+}
+
+.el1{
+   position: relative;
+   border-radius: 5px;
+   
+}
+.el1 p{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 30px;
+    top:10px;
 }

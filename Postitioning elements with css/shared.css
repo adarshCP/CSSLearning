@@ -5,8 +5,26 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 3.5rem auto auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
     
+}
+
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+    margin: 0;
+    padding: 0;
     
+}
+footer{
+    grid-area: footer;
 }
 .backdrop{
     position:fixed;
@@ -175,10 +193,7 @@ body {
 .mobile-nav-item a{
     font-size: 1.5rem;
 }
-main{
-    min-height: calc(100vh - 2.5rem - 4rem);
-    margin-top: 3.5rem;
-}
+
 .main-footer {
     background: rgb(21, 21, 128);
     padding: 2rem;
