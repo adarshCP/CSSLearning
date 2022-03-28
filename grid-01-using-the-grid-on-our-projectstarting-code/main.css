@@ -71,28 +71,35 @@ div{
 
 @media (max-width:600px) {
     .container{
-       display: block;
-
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto auto;
+        
+        grid-template-areas: "el1 el1"
+                             "el4 el4"
+                             "el3 el3"
+                             "el2 el2";
+      
+        grid-gap: 10px 0;
        
     }
-    .container div{
+    /* .container div{
        margin-bottom: 10px;
         
-    }
+    } */
     /* .el1,.el2,.el3,.el4 {
         height: auto;
         border: none;
         
         
     } */
-    .el1 img,
+    /* .el1 img,
 .el2 img,
 .el3 img,
 .el4 img{
     width: 100%;    height:100%;
-    vertical-align: middle;
+    vertical-align: middle; */
 
     
 }
-}
+
 
