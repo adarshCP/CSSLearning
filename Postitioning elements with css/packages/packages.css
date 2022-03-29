@@ -51,6 +51,9 @@ main {
     border-color: #ff5454;
     /* border-color: #ff5454 !important; */
 }
+.package:hover{
+    animation: flip-card 1s ease-out forwards;
+}
 
 .package a {
     text-decoration: none;
@@ -113,3 +116,15 @@ main {
     }
 
 }
+
+@keyframes flip-card{
+    0%{
+      transform:translateY(0) ;
+    }
+    50%{
+      transform:translateY(-2rem) ;
+    }
+    100%{
+      transform:translateY(-1.5rem) ;
+    }
+  }
